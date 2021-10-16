@@ -1,8 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="aboutStyle.css" />
   <link
     rel="stylesheet"
@@ -13,6 +16,42 @@
 </head>
 
 <body>
+  <a class="skip-main" href="#main">Skip to main content</a> 
+    <header class="site-header" >
+      <div class="site-logo">OliRay</div>
+      <!--aria-label-->   
+      <nav aria-label="primary-navigation" class="primary-navigation">
+        <ul role="menubar" aria-label="primary-navigation">
+            <li>
+              <a
+                role="menuitem"
+                href="index.html" 
+                title="home"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                role="menuitem" 
+                href="about.html" 
+                title="about"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a 
+                role="menuitem"
+                href="" 
+                title="contact"
+              >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header> 
   <main class="center width-xl">
     <header>Header</header>
     <h1>About us</h1>
@@ -29,6 +68,7 @@
         <img
           class="profile-img"
           src="https://duckrabbitpy.github.io/images/about_img.jpg"
+          alt="Oli - co-founder"
         />
         <figcaption>Oli - co-founder</figcaption>
       </figure>
@@ -36,6 +76,7 @@
         <img
           class="profile-img"
           src="https://avatars.githubusercontent.com/u/29331705?v=4"
+          alt="Ray - co-founder"
         />
         <figcaption>Ray - co-founder</figcaption>
       </figure>
@@ -44,6 +85,7 @@
       <img
         class="why-work-img"
         src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2680&q=80"
+        alt="image3"
       />
       <section class="why-work-copy">
         <h2>Why work with us?</h2>
@@ -85,6 +127,7 @@
         <img
           class="show-work-img"
           src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1324&q=80"
+          alt="image4"
         />
       </div>
       <div class="box">Copy 1</div>
@@ -93,6 +136,7 @@
         <img
           class="show-work-img"
           src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+          alt="image1"
         />
       </div>
       <div class="box">Copy 2</div>
@@ -101,9 +145,43 @@
         <img
           class="show-work-img"
           src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80"
+          alt="image2"
         />
       </div>
       <div class="box">Copy 3</div>
     </div>
   </main>
+  <footer>
+    <ul>
+      <li>
+        <a
+          role="menuitem"
+          href="index.html" 
+          title="home"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          role="menuitem" 
+          href="about.html" 
+          title="about"
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a 
+          role="menuitem"
+          href="" 
+          title="contact"
+        >
+        Contact
+      </a>
+      </li>
+    </ul>
+    <small>&copy; Copyright 2021, Founders and Coders</small>
+</footer> 
 </body>
+</html>

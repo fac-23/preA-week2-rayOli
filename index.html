@@ -1,34 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous"
+        />
+      </head>
 <body>
     <!--Skip link-->
-    <a class="skip-main" href="#main">Skip to main content</a>
-    <header>Header</header> 
-    <!--aria-label-->   
-    <nav aria-label="Primary Navigation">
-        <ul>
-            <li><a href="" title="home">Home</a></li>
-            <li><a href="" title="about">About</a></li>
-            <li><a href="" title="contact">Contact</a></li>
+    <a class="skip-main" href="#main">Skip to main content</a> 
+    <header class="site-header">
+      <div class="site-logo">OliRay</div>
+      <!--aria-label-->   
+      <nav aria-label="primary-navigation" class="primary-navigation">
+        <ul role="menubar" aria-label="primary-navigation">
+            <li>
+              <a
+                role="menuitem"
+                href="index.html" 
+                title="home"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                role="menuitem" 
+                href="about.html" 
+                title="about"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a 
+                role="menuitem"
+                href="" 
+                title="contact"
+              >
+              Contact
+            </a>
+          </li>
         </ul>
-    </nav>
+      </nav>
+    </header> 
 
-    <main>Main</main>
-    
+    <main class="center width-xl">        
+      <header>...</header>
+      <section class="home-page-container width-xl">
+        <h1>OliRay</h1>
+        <h2>OliRay software development agency promises quality production web applications.</h2>
+        <h3>Whether you are a small start-up or a global tech giant, we can build a modern tech solution that suits your needs.</h3>
+      </section>
+    </main>    
 
     <footer>
         <ul>
-            <li><a href="" title="home">Home</a></li>
-            <li><a href="" title="about">About</a></li>
-            <li><a href="" title="contact">Contact</a></li>
+          <li>
+            <a
+              role="menuitem"
+              href="index.html" 
+              title="home"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              role="menuitem" 
+              href="about.html" 
+              title="about"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a 
+              role="menuitem"
+              href="" 
+              title="contact"
+            >
+            Contact
+          </a>
+        </li>
         </ul>
         <small>&copy; Copyright 2021, Founders and Coders</small>
     </footer>   
