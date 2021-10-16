@@ -1,23 +1,22 @@
 a.skip-main {
-    left: -999px;
-    position: absolute;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    z-index: -999;
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
 }
 a.skip-main:focus {
-    left: 0;
-    top: auto;
-    width: auto;
-    height: auto;
-    overflow: auto;
-    margin: 0 35%;
-    padding: 5px;
-    font-size: 1em;
-    outline: 3px solid red;
-    text-align: center;
-    z-index: 999;
-}   
-
+  left: 0;
+  top: auto;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  margin: 0 35%;
+  padding: 5px;
+  font-size: 1em;
+  outline: 3px solid red;
+  text-align: center;
+  z-index: 999;
+}
