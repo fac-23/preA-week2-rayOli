@@ -1,3 +1,17 @@
+
+html {
+  scroll-behavior: smooth;
+  
+ }
+
+body {
+  color: #333;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
 a.skip-main {
   left: -999px;
   position: absolute;
@@ -7,6 +21,7 @@ a.skip-main {
   overflow: hidden;
   z-index: -999;
 }
+
 a.skip-main:focus {
   left: 0;
   top: auto;
@@ -21,16 +36,38 @@ a.skip-main:focus {
   z-index: 999;
 }
 
-body {
-  color: #333;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+/* re-usable classes */
+.center {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.width-sm {
+  max-width: 20rem;
+}
+.width-lg {
+  max-width: 40rem;
+}
+.width-xl {
+  max-width: 60rem;
+}
+
+.fixed-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  text-indent: 0.5em;
+
+  z-index: 10;
+  background-color: #c90;
+  height: 70px;
 }
 
 /*header styles*/
-.site-header{
+.site-header{ 
+    
   width:100%;
   height:70px;
   display:flex;
@@ -87,13 +124,28 @@ body {
 }
 /*end of primary navigation styles*/
 
-/*Home Page styles*/
-.home-page-container {
+main.site-content{  
   display: flex;
   flex-flow: column;
-  gap: 1rem;
   justify-content: center;
-  height:100vh;
+  align-content: center;
+  gap: 1rem;
+  height:auto;
+  width: 100%;
+  margin-bottom: 0.5em;
+  position:relative;
+
+}
+
+/*Home Page styles*/
+.home-page-container {
+    
+  display: flex;
+  flex-flow: column;
+  /*gap: 1rem;*/
+  justify-content: center;
+  min-height: 90vh;  
+ 
 }
 
 .home-page-container > h1 {
@@ -115,46 +167,103 @@ body {
 }
 /*End of Home Page styles*/
 
+/*about page styles*/
+.about-page-container{  
+  height:auto; 
+  margin-bottom:70px;
+  
+	
+}
+.about-page-container > h1 {
+  font-weight: bolder;
+}
+
+.about-page-container > h2 {
+  font-weight: normal;
+}
+
+.about-page-container > h3 {
+  font-weight: lighter;
+}
+
+.about-page-container .profile-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.about-page-container .profile-img {
+  height: 300px;
+  border-radius: 6%;
+}
+
+.about-page-container .why-work-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  background-color: rgb(238, 236, 236);
+}
+
+.about-page-container .why-work-img {
+  width: 50%;
+}
+
+.about-page-container .why-work-copy {
+  width: 50%;
+  padding: 1rem;
+}
+
+.about-page-container .work-grid {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.about-page-container .show-work-img {
+  width: 80%;
+}
+/*End of about page styles*/
+
+.contact-page-container{
+  position: relative;
+  min-height:90vh;
+  
+}
+
 
 footer{
   height:auto;
   display:flex;
   justify-content: space-between;
   align-items: flex-start;
+  background:#c90;
 }
 
 footer > small{
   align-self: flex-end;
 }
 
-footer > ul{
+#footer-nav{
+  margin:0;
+  padding:0;
+}
+
+#footer-nav > ul{
   list-style: none; 
   margin:0;
   padding:0 0 0 0.5em;
 }
 
-footer > ul li{   
+#footer-nav > ul li{   
   line-height:25px;
 }
 
-footer > ul li a{
+#footer-nav > ul li a{
   text-decoration:none;
   display:block; 
   line-height:25px;
 }
 
-/* re-usable classes */
-.center {
-  max-width: 30rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-.width-sm {
-  max-width: 20rem;
-}
-.width-lg {
-  max-width: 40rem;
-}
-.width-xl {
-  max-width: 60rem;
-}
+
