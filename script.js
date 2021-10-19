@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	window.onscroll = () => {
 		// fixes header to top of page on page scroll.
-		if (scrollScreen.scrollTop >= 70) {
+		if (scrollScreen.scrollTop >= 75) {
 			siteHeader.classList.add("fixed-header");
 		} else {
 			siteHeader.classList.remove("fixed-header");
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		scrollScreen.scrollTo({
 			behavior: "smooth",
 			left: 0,
-			top: element.offsetTop - 70, // deduct height of header.
+			top: element.offsetTop - 75, // deduct height of header.
 		});
 	};
 	
