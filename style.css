@@ -1,8 +1,6 @@
-
 html {
   scroll-behavior: smooth;
-  
- }
+}
 
 body {
   color: #333;
@@ -64,7 +62,6 @@ a.skip-main:focus {
   background-color: aliceblue;
   height: 70px;
 }
-
 
 @media only screen and (max-width: 1680px) {
   /*header styles*/
@@ -184,6 +181,7 @@ a.skip-main:focus {
     font-weight: bolder;
   }
 
+
   .about-page-container > h2 {
     font-weight: normal;
   }
@@ -210,6 +208,7 @@ a.skip-main:focus {
     margin-top: 3rem;
     background-color: rgb(238, 236, 236);
   }
+
 
   .about-page-container .why-work-img {
     width: 50%;
@@ -276,6 +275,7 @@ a.skip-main:focus {
     height: 4rem;
     max-width: 600px;
   }
+
 
   /*Footer styles*/
   footer{
@@ -1311,3 +1311,4 @@ a.skip-main:focus {
   }
 
 }
+
