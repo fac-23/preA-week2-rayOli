@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contactStyle.css" />
+  </head>
+</html>
+
+<body>
+  <main>
+    <form id="form" action="" class="contact-form" method="post">
+      <h2>Contact us!</h2>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="tel">Telephone</label>
+      <input id="tel" name="tel" type="tel" />
+
+      <label for="message">Message</label>
+      <textarea name="message"></textarea>
+
+      <fieldset>
+        <legend>Contact method</legend>
+
+        <input
+          id="contact-email"
+          type="radio"
+          name="contact"
+          value="email"
+          checked
+        />
+        <label for="contact-email" class="radio">Email</label>
+
+        <input id="contact-tel" type="radio" name="contact" value="telephone" />
+        <label for="contact-tel" class="radio">Telephone</label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>

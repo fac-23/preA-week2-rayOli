@@ -1,0 +1,38 @@
+form {
+  display: grid;
+  padding: 1rem;
+  color: #fff;
+  background: rgb(49, 9, 75);
+  border: 1px solid rgb(144, 143, 143);
+  margin: auto;
+  max-width: 600px;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+form input {
+  background: #fff;
+  border: 1px solid rgb(238, 236, 236);
+}
+form button {
+  background: rgb(238, 236, 236);
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid rgb(144, 143, 143);
+}
+form button:hover {
+  background: rgb(36, 197, 103);
+}
+
+label {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+input {
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  height: 4rem;
+  max-width: 600px;
+}
