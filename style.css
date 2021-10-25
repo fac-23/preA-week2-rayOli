@@ -282,6 +282,7 @@ button#mobile-toggle {
 
   /*Footer styles*/
   footer {
+    margin-top: 1em;
     height: auto;
     display: flex;
     justify-content: space-between;
