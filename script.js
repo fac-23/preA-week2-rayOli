@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const scrollScreen = document.querySelector(["body", "html"]);
 	// get header element
 	const siteHeader = document.querySelector(".site-header");
-	
+
 	/**
 	 * Page Scroll Function
 	 * In JavaScript, using the addEventListener() method:  object.addEventListener("scroll", myScript);
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		} else {
 			siteHeader.classList.remove("fixed-header");
 		}
-	
+
 	};
 
 	const scrollTo = (element) => {
@@ -30,7 +30,31 @@ document.addEventListener("DOMContentLoaded", () => {
 			top: element.offsetTop - 75, // deduct height of header.
 		});
 	};
-	
+
+	// Your code to run since DOM is loaded and ready
+	const menuToggle = document.querySelector("#mobile-toggle");
+	// create menu variables
+	const slideoutMenu = document.querySelector(".primary-navigation");
+	//get menu height
+	const slideoutMenuHeight = slideoutMenu.offsetHeight;
+
+	// mobile menu toggle button
+	menuToggle.addEventListener("click", (event) => {
+		event.preventDefault();
+
+		// toggle open class
+		slideoutMenu.classList.toggle("openMenu");
+		slideoutMenu.style.transition = "all 0.3s ease-in 0s";
+
+		// slide menu
+		if (slideoutMenu.classList.contains("openMenu")) {
+			slideoutMenu.style.top = "0px";
+		} else {
+			slideoutMenu.style.transition = "all 0.3s ease-in 0s";
+			slideoutMenu.style.top = `${-slideoutMenuHeight}px`;
+		}
+	});
+
 	// turn HTML collection list of objects into an array
 	// Iterated over array with forEach.
 	Array.from(navLinks).forEach((link) => {
@@ -42,11 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
 			if (hash !== "") {
 				// if not, Prevent default anchor click behavior
 				event.preventDefault();
-
 				// select element id converting hash to string using template literal and use as argument in scrolling function.
 				scrollTo(document.querySelector(`${hash}`));
+				slideoutMenu.style.top = `${-slideoutMenuHeight}px`;
+				slideoutMenu.classList.remove("openMenu");
+
 			} // End if
-			
+
 		});
 	});
 });
+
+
