@@ -146,17 +146,6 @@ button#mobile-toggle {
     padding: 0.5em;
   }
 
-  /* main.site-content #bg-video {
-    position: fixed;
-    align-self:center;
-    top: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1000;
-  } */
-
   .home-page-container > header h1 {
     font-weight: bolder;
     width: 100%;
@@ -228,6 +217,10 @@ button#mobile-toggle {
   .about-page-container .why-work-copy {
     width: 50%;
     padding: 1rem;
+  }
+
+  .about-page-container figure {
+    margin: 0;
   }
 
   .about-page-container .work-grid {
